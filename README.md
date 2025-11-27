@@ -30,8 +30,16 @@ I have utilized for the purpose of optimization, a Dirty Flag design pattern. Th
 Dirty Flag blueprint (circled in red) + Observer watching for changes (everything else):
 <img width="1371" height="526" alt="Screenshot 2025-11-27 153737" src="https://github.com/user-attachments/assets/067b9f04-472a-400f-91b5-6a582ca94fc2" />
 
+Dirty Flag Pattern Diagram Explanation:
+<img width="818" height="789" alt="image" src="https://github.com/user-attachments/assets/99ed1c5a-6066-4433-9c2a-54492102755e" />
+
+
 Observer's States being changed:
 <img width="1135" height="386" alt="Screenshot 2025-11-27 154642" src="https://github.com/user-attachments/assets/67a998e5-46d2-41ce-b177-109314529c9e" />
+
+Observer Pattern Diagram Explanation:
+<img width="937" height="782" alt="image" src="https://github.com/user-attachments/assets/15276d52-0dae-4ca4-93de-02c51962881b" />
+
 
 Performace Profiling:
 When our performance profiling was done with Unreal Insights, all major lag spikes were caused entirely by the PostProcessing effects of motion blur and grain added to our camera upon starting a rewind. Thus saving processing power by allowing the player to not consume processing power with game logic and only putting any strain on hardware through mere visual effects (as those are simpler to deal with than unoptimized game logic).
